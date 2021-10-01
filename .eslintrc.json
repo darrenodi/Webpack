@@ -18,7 +18,7 @@
       "js": "always", "json": "always"
     }]
   },
-  "ignorePatterns": ["server.js","index.js","print.js","webpack.config.js",
+  "ignorePatterns": ["server.js","print.js","webpack.config.js",
     "dist/",
     "build/"
   ]
