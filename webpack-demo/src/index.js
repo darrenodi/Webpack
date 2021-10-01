@@ -1,3 +1,5 @@
+// eslint-disable-file no-use-before-define 
+
 import _ from 'lodash';
 import './style.css';
 import printMe from './print.js';
