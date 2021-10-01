@@ -3,9 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Wbpack Exercise</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>To Do List</title>
 </head>
 <body>
-    <h1>Hello webpack!</h1>
+    
+    <div class="todo">
+      <div class="tablehead"><div>Today's To Do</div><i class="fa fa-refresh" aria-hidden="true"></i></div>
+      <hr>
+      <input type="text" id="addlist" name="addlist" placeholder="Add to your list">
+      <hr>
+      <ul class="todolist" id="todolist">
+      </ul>
+      <div class="clearbutton"><a href="#">Clear all completed</a></div>
+    </div>
 </body>
 </html>

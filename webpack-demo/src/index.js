@@ -1,19 +1,39 @@
+// eslint-disable-file no-use-before-define 
+
 import _ from 'lodash';
 import './style.css';
 import printMe from './print.js';
 
- function component() {
-   const element = document.createElement('div');
-  const btn = document.createElement('button');
+ function component(item) {
+   const divUL = document.querySelector("#todolist");
 
-   element.innerHTML = _.join(['Hello', 'webpack'], ' ');
+   const listElement = document.createElement('li');
 
-  btn.innerHTML = 'Click me and check the console!';
-  btn.onclick = printMe;
+   listElement.innerHTML = "<div class='listcheck'><div><input type='checkbox' name='checkbox'>" + "<div>"+item.description+"</div></div><i class='fas fa-ellipsis-h'></i></div><hr>";
 
-  element.appendChild(btn);
+  divUL.appendChild(listElement);
 
-   return element;
+   return divUL;
  }
 
- document.body.appendChild(component());
+const arrayTask = [
+  {
+    description : "Learn Webpack",
+    complete : true,
+    index : 0
+  },
+
+  {
+    description : "Make Dinner",
+    complete : false,
+    index : 1
+  },
+
+  {
+      description : "Do Laundry",
+      complete : true,
+      index : 2
+  }
+];
+
+arrayTask.forEach(component);
