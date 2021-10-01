@@ -1,3 +1,51 @@
 body {
-  background-color: bisque;
+  /* background-color: bisque; */
+}
+
+.todolist {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tablehead {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo {
+  border: 1px inset gray;
+  padding: 10px;
+  backdrop-filter: brightness(60%);
+  backdrop-filter: blur(2px);
+  width: 50%;
+  margin: 0 auto;
+}
+
+.todo ul li .listcheck {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo ul li .listcheck div {
+  display: flex;
+  gap: 10px;
+}
+
+.todo input {
+  border-style: none;
+  font-style: italic;
+}
+
+.todo div a {
+  text-decoration: none;
+  color: gray;
+}
+
+hr {
+  padding: 0;
+}
+
+.clearbutton {
+  text-align: center;
 }
